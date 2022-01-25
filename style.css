@@ -1,0 +1,357 @@
+@font-face {
+    font-family: "quantum";
+    src: url("font/quantum/Quantum.otf");
+}
+
+@font-face {
+    font-family: "goodtimes";
+    src: url("font/goodtimes/good\ times\ rg.ttf");
+}
+
+@keyframes slidein {
+    from{margin-left:100%}
+    to{margin-left:0}
+}
+
+@keyframes apparition {
+    from{opacity: 0%}
+    50%{opacity: 0%}
+    51%{opacity: 100%}
+    to{ opacity: 100%}
+}
+
+body{
+    background-color: #333533;
+    font-family:  goodtimes;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqTlk5yt_XlSDVFcw71ZrI2SN0eGANQhS5lw&usqp=CAU);
+    color: white;
+    padding: 25px;
+}
+
+
+.maPhoto {
+    animation-iteration-count:1;
+    animation-duration: 4s;
+    animation-name: slidein;
+}
+
+.bulle img{
+    position: absolute;
+    margin-top: -210px;
+}
+
+.bulle img{
+    animation-iteration-count:1;
+    animation-duration: 9s;
+    animation-name: apparition;
+}
+
+.bulleContent{
+    color: #f3722c;
+    position: absolute;
+    z-index: 1;
+    margin-top: -200px;
+    margin-left: 40px;
+}
+
+.bulleContent{
+    animation-iteration-count:1;
+    animation-duration: 9s;
+    animation-name: apparition;
+}
+
+.bulleContent p:last-child{
+    color: black;
+    font-family: Helvetica;
+    font-size: 23px;
+    margin-top: 0;
+}
+
+header h1{
+    font-size: 2em;
+    margin: 0;  
+}
+
+header h2{
+    font-size: 1em;
+    margin: 0;
+    margin-top: 10px;
+}
+
+header img {
+    border-radius: 10px;
+}
+
+.presentation{
+    margin: 0;
+    margin-left: 1rem;
+}
+
+nav ul {
+    display: flex;
+    background-color: black;
+    color: orange;
+    width: 100%;
+    list-style: none;   
+    justify-content: space-evenly;
+    margin: 0;
+}
+
+.navigation {
+    position: sticky;
+    top: 0;
+}
+
+.nav {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.navigation li  {
+    padding: 15px;
+}
+
+li a:hover{
+    background-color: orange;
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+}
+.navigation a{
+    text-decoration: none;
+    color: orange;
+    padding: 15px;
+}
+
+.middle{
+    display: flex;
+    justify-content: space-between;
+}
+
+aside{
+    width: 15%;
+    padding: 1rem;
+    background: url(picture/background_orange.jpg);
+    background-size: contain;
+}
+
+.asidebloc{
+    margin: 0;
+}
+
+.asidebloc h3{
+    font-size: 16px;
+}
+
+.asidebloc h4{
+    font-size: 14px;
+}
+
+.asidebloc ul{
+    font-family: system-ui;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.asidebloc li{
+padding-bottom: 1rem;
+}
+
+.dropdown {
+    margin-top: 4rem;
+    display: inline-block;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+  
+.dropdown-content {
+    font-family: system-ui;
+        border-radius: 5px;
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 260px;
+        margin-top: 1.5%;
+        margin-left: 25%;
+        text-align: center;
+        z-index: 1;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+ }
+
+.historic{
+    width: 80%;
+    margin: 0;
+}
+
+.blocArticle {
+    padding: 2rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 5rem;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blocArticle h4 {
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+.blocCompetences {
+    padding: 2rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 5rem;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.blocCompetences h4 {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.blocCompetences ul{
+    list-style-type: none;
+}
+
+.date {
+    font-size: 20px;
+    color: #f3722c;
+}
+
+.date p:first-child {
+    font-size: 30px;
+    margin: 0;
+}
+.date p:last-child {
+    margin: 0;
+}
+
+.items {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.items > p {
+    font-size: 1rem;
+}
+
+.blocloisir{
+    text-align: center;
+}
+
+.blocloisir h4{
+    background-color: black;
+    color: white;
+    margin-bottom: 0;
+    margin-top: 3rem;
+}
+
+.blocloisir img{
+    width: 25%; 
+}
+
+.imageloisir{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.rubriques {
+    margin: 0;
+    color: orange;
+    font-size: 3em;
+    margin-top: 2rem;
+}
+
+.margeTrois{
+    margin: 50px;
+}
+
+form{
+    margin-top: 1rem;
+    margin: 7rem;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 16px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    margin-bottom: 2rem;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+
+  label{
+      color: white;
+  }
+
+  .contact {
+    border-radius: 20px;
+    background-color: white;
+    padding: 50px;
+    margin: 50px;
+  }
+
+  section{
+    margin: 50px;
+  }
+  
+  footer{
+    margin-top: 0;
+    background-color: black;
+    color: white;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+footer a{
+    padding: 30px;
+    text-decoration: none;
+}
+
+footer ul{
+    list-style-type: none;
+}

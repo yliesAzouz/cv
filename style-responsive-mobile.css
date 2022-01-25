@@ -1,0 +1,42 @@
+@media screen and (max-width: 655px) {
+
+.maPhoto {
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+
+.presentation {
+    animation-iteration-count:1;
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+
+#valeurs li{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.blocArticle{
+    flex-direction: column;
+}
+
+.date{
+    margin-top: 16px;
+}
+
+.blocArticle img{
+    margin-bottom: 16px;
+}
+.bulle img{
+    display: none;
+}
+.bulleContent{
+    display: none;
+}
+
+.rubriques{
+    font-size: 2rem;
+}
+
+}

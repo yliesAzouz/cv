@@ -1,0 +1,89 @@
+@media screen and (max-width: 990px) {
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .maPhoto {
+        animation-duration: 2s;
+        animation-name: slidein;
+    }
+
+    .bulle img{
+        display: none;
+    }
+    .bulleContent{
+        display: none;
+    }
+
+    .presentation {
+        animation-duration: 2s;
+        animation-name: slidein;
+    }
+    
+    .presentation {
+        text-align: center;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+
+    aside h3{
+        text-align: center;
+    }
+
+    aside h4{
+        text-align: center;
+    }
+
+    .asidebloc li{
+        text-align: center;
+    }
+
+    #valeurs ul{
+        display: flex;
+        justify-content: center;
+    }
+
+    #valeurs li{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    #bloccompetences {
+        display: flex;
+        justify-content: space-around;
+    }
+    .coordonnees {
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+
+    .dropdown {
+        margin: 0;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        margin-top: 15%;
+        margin-left: 0;
+        z-index: 1;
+    }
+
+    .historic {
+        width: 100%;
+    }
+    
+    .middle {
+        flex-direction: column;
+    }
+
+}
